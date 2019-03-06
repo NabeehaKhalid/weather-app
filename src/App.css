@@ -1,0 +1,290 @@
+.container{
+  width:375px;
+  height: 770px;
+  background-image: url('./components/images/day_background.png');
+  background-size: cover;
+  margin: 10 auto;
+  text-transform: uppercase;
+  font-family:Roboto,sans-serif;
+
+}
+
+.container .dotstyle ul{
+  top:20px;
+  left:145px;
+  position: absolute;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+.container .dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.container .dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.3);
+	text-indent: -999em;
+	cursor: pointer;
+	position: absolute;
+}
+.container .dotstyle-fillup li a {
+	overflow: hidden;
+	background-color: transparent;
+	box-shadow: inset 0 0 0 2px white;
+	-webkit-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.container .dotstyle-fillup li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 1px #fff;
+	-webkit-transition: height 0.3s ease;
+	transition: height 0.3s ease;
+}
+.container .dotstyle-fillup li a:hover,
+.container .dotstyle-fillup li a:focus {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.container .dotstyle-fillup li.current a::after {
+	height: 100%;
+}
+.container .dotstyle li Link {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.3);
+	text-indent: -999em;
+	cursor: pointer;
+	position: absolute;
+}
+.container .dotstyle-fillup li Link {
+	overflow: hidden;
+	background-color: transparent;
+	box-shadow: inset 0 0 0 2px white;
+	-webkit-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.container .dotstyle-fillup li Link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 1px #fff;
+	-webkit-transition: height 0.3s ease;
+	transition: height 0.3s ease;
+}
+.container .dotstyle-fillup li Link:hover,
+.container .dotstyle-fillup li Link:focus {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.container .dotstyle-fillup li.current Link::after {
+	height: 100%;
+}
+
+.container .getWeather_button {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 50px;
+  height: 100px;
+  width: 275px;
+  font-size: 28px;
+  border-radius: 10px;
+  border-color: white;
+  border-width: medium;
+  font-weight: bolder;
+}
+
+.container .location {
+  position: absolute;
+  top:0px;
+  color: black;
+  font-family: sans-serif;
+  font: Verdana;
+  font-size: 50px;
+  font-weight: lighter;
+  left:85px;
+}
+.container .description {
+  position:absolute;
+  color: black;
+  top: 90px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+  left:150px;
+
+}
+.container .temperature {
+  position: absolute;
+  color: black;
+  font-size:90px;
+  font-family: sans-serif;
+  font: Verdana;
+  top:180px;
+  font-weight: lighter;
+  left: 100px;
+  text-transform: lowercase;
+}
+
+.container .mainImage{
+  border: 0px;
+  position: absolute;
+  top:140px;
+  left:125px;
+  width:130px;
+
+}
+
+
+.container .scroll{
+  position:relative;
+  height: 380px;
+  width:360px;
+  top:60px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+
+.container  .feelsLike, .chanceOfRain, .windSpeed, .humidity{
+  top:300px;
+  font-size:25px;
+  width:100%;
+  color: white;
+  font-weight: lighter;
+  font-family: Roboto, sans-serif;
+
+}
+.container  .feelsLikeBubble, .chanceOfRainBubble, .humidityBubble, .windSpeedBubble{
+  position: relative;
+  width: 350px;
+  height: 90px;
+  border-radius: 20px;
+  text-align: middle;
+  background-color: #0d2433;
+  border-width: thick;
+  border-color: #0d0033;
+  margin: 3px;
+
+}
+
+
+.container .weekSummary{
+  font-family: Roboto,sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.container .weekSummaryTitle{
+  font-weight: lighter;
+  font-size: 20px;
+  text-decoration: overline underline;
+  padding: 5px;
+}
+
+table{
+  width:365px;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+table, th, td{
+  padding: 5px;
+}
+
+th{
+  height: 20px;
+}
+
+tr{
+  border-bottom: 2px solid black;
+}
+
+td{
+  background-color: #0d2433;
+  border: 2px solid #0d0033;
+  border-radius: 5px;
+
+}
+
+
+
+
+.container .Clothes{
+  position: absolute;
+  font-family: sans-serif;
+  font: Verdana;
+  font-size: 50px;
+  font-weight: lighter;
+  top:50px;
+  text-align: center;
+}
+
+.container .dailySummary{
+  font-size: 20px;
+  text-align: center;
+}
+
+.container .icon1, .icon2, .icon3, .icon4{
+  height: 220px;
+  width: 140px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.container .icon1{
+  position: absolute;
+  left:20px;
+  top:170px;
+}
+
+.container .icon2{
+  position: absolute;
+  left:190px;
+  top:170px;
+}
+
+.container .icon3{
+  position: absolute;
+  top:420px;
+  left:20px;
+}
+
+.container .icon4{
+  position: absolute;
+  top:420px;
+  left:190px;
+}
